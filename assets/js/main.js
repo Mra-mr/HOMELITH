@@ -73,3 +73,52 @@
   });
 
 })();
+
+/* ===== Bannière de consentement cookies — HOMELITH (composant autonome) ===== */
+(function () {
+  'use strict';
+  var KEY = 'homelith_cookie_consent';
+
+  function ready(fn) {
+    if (document.readyState !== 'loading') { fn(); }
+    else { document.addEventListener('DOMContentLoaded', fn); }
+  }
+
+  ready(function () {
+    try { if (localStorage.getItem(KEY)) return; } catch (e) { /* localStorage indispo : on affiche quand même */ }
+
+    var st = document.createElement('style');
+    st.textContent =
+      '#hl-cookie a{color:#18339C;text-decoration:underline;text-underline-offset:2px}' +
+      '.hl-ck-btn{background:transparent;border:1px solid rgba(255,255,255,.55);color:#fff;font-family:inherit;font-size:11px;font-weight:500;letter-spacing:.08em;padding:9px 18px;cursor:pointer;transition:color .2s,border-color .2s}' +
+      '.hl-ck-btn:hover,.hl-ck-btn:focus-visible{color:#18339C;border-color:#18339C}' +
+      '.hl-ck-btn:focus-visible{outline:1px solid #18339C;outline-offset:2px}';
+    document.head.appendChild(st);
+
+    var bar = document.createElement('div');
+    bar.id = 'hl-cookie';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', 'Consentement aux cookies');
+    bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:2147483000;background:#030304;border-top:1px solid rgba(255,255,255,.18)';
+    bar.innerHTML =
+      '<div style="width:min(1200px,92vw);margin:0 auto;padding:clamp(14px,1.7vw,20px) 0;display:flex;align-items:center;gap:clamp(16px,3vw,44px);flex-wrap:wrap">' +
+        '<div style="flex:1 1 400px;min-width:220px;font-size:11.5px;line-height:1.6;color:#b9b9b9">' +
+          'Nous utilisons uniquement les technologies nécessaires au fonctionnement du site. Vous pouvez accepter ou refuser les cookies optionnels. ' +
+          '<a href="politique-cookies.html">Politique de cookies</a>' +
+        '</div>' +
+        '<div style="display:flex;gap:10px;flex:0 0 auto">' +
+          '<button type="button" class="hl-ck-btn" data-choice="refused">REFUSER</button>' +
+          '<button type="button" class="hl-ck-btn" data-choice="accepted">ACCEPTER</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(bar);
+
+    function choose(v) {
+      try { localStorage.setItem(KEY, v); } catch (e) {}
+      if (bar.parentNode) bar.parentNode.removeChild(bar);
+    }
+    Array.prototype.forEach.call(bar.querySelectorAll('.hl-ck-btn'), function (b) {
+      b.addEventListener('click', function () { choose(b.getAttribute('data-choice')); });
+    });
+  });
+})();
