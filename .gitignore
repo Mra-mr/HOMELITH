@@ -1,0 +1,24 @@
+# --- Fichiers système macOS / Windows ---
+.DS_Store
+**/.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# --- Fichiers temporaires / éditeurs ---
+*.swp
+*.swo
+*~
+._*
+*.tmp
+*.log
+
+# --- Dépendances (site statique : aucune, mais par sécurité) ---
+node_modules/
+
+# --- Config locale de l'éditeur (non versionnée) ---
+.claude/settings.local.json
+
+# NOTE : tout le reste est versionné volontairement —
+# assets/ (css, js, images, fonts), les 6 pages HTML, CLAUDE.md,
+# Références/, Project brief/, design/.

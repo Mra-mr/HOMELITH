@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homelith — Contact</title>
+<meta name="description" content="Parlez-nous de votre projet : nous vous répondrons avec les prochaines étapes.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23030304'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='18' font-weight='700' fill='%23fff' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/css/styles.css?v=1d74d351" as="style">
+<link rel="stylesheet" href="assets/css/styles.css?v=1d74d351">
+</head>
+<body data-page="contact">
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">HOMELITH</a>
+    <nav class="nav">
+      <a href="index.html">ACCUEIL</a>
+      <a href="about.html">À PROPOS</a>
+      <a href="services.html">SERVICES</a>
+      <a href="projects.html">PROJETS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a class="header-cta" href="contact.html">PARLER DE VOTRE PROJET</a>
+    <button class="burger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">ACCUEIL</a>
+    <a href="about.html">À PROPOS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="projects.html">PROJETS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="contact.html" style="color:#18339C;font-weight:600">PARLER DE VOTRE PROJET</a>
+  </div>
+</header>
+<main>
+<div style="text-align:center">
+<div style="color:#18339C;font-weight:600;font-size:clamp(11px,1.35vw,17px);letter-spacing:.02em">PARLONS DE VOTRE PROJET</div>
+<div style="font-weight:600;font-size:clamp(48px,10.6vw,146px);line-height:1.02;letter-spacing:-.035em;margin-top:clamp(8px,1.4vw,18px)"><span style="color:#949494">LET’S</span> <span>talk</span></div>
+<div style="font-weight:600;font-size:clamp(11px,1.25vw,16px);line-height:1.5;margin-top:clamp(10px,1.6vw,20px)">MAISONS CONTEMPORAINES ET INTÉRIEURS SUR MESURE.<br>PARLEZ-NOUS DE VOTRE PROJET, NOUS VOUS RÉPONDRONS AVEC LES PROCHAINES ÉTAPES.</div>
+</div>
+
+<div style="display:flex;gap:clamp(24px,4vw,64px);align-items:stretch;margin:clamp(44px,6vw,86px) auto 0;max-width:min(1200px,94vw);flex-wrap:wrap">
+<div style="flex:1.9 1 0;min-width:300px">
+<div style="font-style:italic;font-weight:500;font-size:clamp(13px,1.3vw,16px);letter-spacing:.02em;color:#18339C">[PARLONS DE VOTRE PROJET]</div>
+<div style="font-weight:600;font-size:12.5px;margin:clamp(34px,4.6vw,62px) 0 6px">Votre nom*</div>
+<div style="display:flex;gap:clamp(14px,2vw,28px);flex-wrap:wrap">
+<input type="text" placeholder="Prénom" style="flex:1 1 180px;min-width:150px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.35);padding:10px 0;font-size:12px;outline:none">
+<input type="text" placeholder="Nom" style="flex:1 1 180px;min-width:150px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.35);padding:10px 0;font-size:12px;outline:none">
+</div>
+<div style="font-weight:600;font-size:12.5px;margin:clamp(26px,3.4vw,44px) 0 6px">Vos coordonnées*</div>
+<div style="display:flex;gap:clamp(14px,2vw,28px);flex-wrap:wrap">
+<input type="email" placeholder="Adresse e-mail" style="flex:1 1 180px;min-width:150px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.35);padding:10px 0;font-size:12px;outline:none">
+<input type="tel" placeholder="Téléphone" style="flex:1 1 180px;min-width:150px;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.35);padding:10px 0;font-size:12px;outline:none">
+</div>
+<div style="font-style:italic;font-weight:500;font-size:12px;letter-spacing:.04em;margin:clamp(30px,4.4vw,50px) 0 clamp(18px,2.6vw,32px)">QUEL BUDGET AVEZ-VOUS ENVISAGÉ ?</div>
+<div style="display:flex;gap:clamp(14px,2.4vw,34px);flex-wrap:wrap;font-style:italic;font-size:12px">
+<div data-b="0" class="budget-pill" onclick="pickBudget(this)" style="cursor:pointer;color:#FFFFFF">&lt; €50K</div>
+<div data-b="1" class="budget-pill" onclick="pickBudget(this)" style="cursor:pointer;color:#FFFFFF">€50K–€100K</div>
+<div data-b="2" class="budget-pill is-active" onclick="pickBudget(this)" style="cursor:pointer;color:#18339C">€100K–€250K</div>
+<div data-b="3" class="budget-pill" onclick="pickBudget(this)" style="cursor:pointer;color:#FFFFFF">€250K–€500K</div>
+<div data-b="4" class="budget-pill" onclick="pickBudget(this)" style="cursor:pointer;color:#FFFFFF">&gt; €500K</div>
+</div>
+<div style="display:inline-flex;cursor:pointer;margin-top:clamp(40px,5.6vw,74px)">
+<div style="border:1px solid rgba(255,255,255,.55);padding:13px 0;width:clamp(160px,16vw,210px);text-align:center;font-size:12px;font-weight:500">Envoyer la demande</div>
+<div style="border:1px solid rgba(255,255,255,.55);border-left:0;width:42px;display:flex;align-items:center;justify-content:center;font-size:12px;margin-left:6px">↗</div>
+</div>
+</div>
+<div style="flex:1 1 0;min-width:260px;position:relative;min-height:clamp(280px,29vw,420px);filter:grayscale(1);overflow:hidden"><img class="ph bw" src="assets/images/ct-hand.jpg" alt="architect examining an architectural model on a desk — B&W" loading="lazy"></div>
+</div>
+</main>
+<footer style="width:min(1200px,90vw);margin:clamp(50px,8vw,110px) auto 0;padding-bottom:clamp(20px,3vw,34px)">
+<div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(20px,3vw,30px) 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+<div onclick="location.href='index.html'" style="font-weight:600;font-size:15px;letter-spacing:.02em;cursor:pointer">HOMELITH</div>
+<nav style="display:flex;gap:clamp(16px,2.6vw,36px);font-size:11px;font-weight:500;letter-spacing:.1em;flex-wrap:wrap">
+<div onclick="location.href='index.html'" style="cursor:pointer">ACCUEIL</div>
+<div onclick="location.href='about.html'" style="cursor:pointer">À PROPOS</div>
+<div onclick="location.href='services.html'" style="cursor:pointer">SERVICES</div>
+<div onclick="location.href='projects.html'" style="cursor:pointer">PROJETS</div>
+<div onclick="location.href='contact.html'" style="cursor:pointer">CONTACT</div>
+</nav>
+<div onclick="location.href='contact.html'" style="font-size:11px;font-weight:600;letter-spacing:.1em;color:#18339C;cursor:pointer">PARLER DE VOTRE PROJET</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(26px,4vw,48px) 0 clamp(30px,4vw,54px);font-size:clamp(16px,2vw,26px);line-height:1.35;letter-spacing:-.01em;max-width:760px"><span style="font-weight:600">Parlons de votre projet</span> <span style="color:#949494">et des premières étapes</span> <span style="font-weight:600">pour le concrétiser.</span></div>
+<div style="display:flex;gap:clamp(20px,4vw,60px);flex-wrap:wrap;padding-bottom:clamp(26px,4vw,44px)">
+<div style="flex:1 1 200px;min-width:170px">
+<div style="font-size:10.5px;color:#949494;margin-bottom:10px">Adresse</div>
+<div style="font-size:11.5px;line-height:1.5">24 rue du Bac<br>75007 Paris, France</div>
+</div>
+<div style="flex:1 1 200px;min-width:170px">
+<div style="font-size:10.5px;color:#949494;margin-bottom:10px">E-mail</div>
+<div style="font-size:11.5px;line-height:1.5">cont@homelith.design</div>
+</div>
+<div style="flex:1 1 200px;min-width:170px">
+<div style="font-size:10.5px;color:#949494;margin-bottom:10px">Téléphone</div>
+<div style="font-size:11.5px;line-height:1.5">06 12 34 56 78</div>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:10px;color:#949494">
+<div>©2026 homelith. Tous droits réservés</div>
+<div style="display:flex;gap:clamp(14px,2vw,26px)">
+<div>Politique de confidentialité</div>
+<div>Politique de cookies</div>
+<div>Mentions légales</div>
+</div>
+</div>
+</footer>
+<script src="assets/js/main.js?v=1d74d351" defer></script>
+</body>
+</html>

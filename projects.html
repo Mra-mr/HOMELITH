@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Homelith — Projets</title>
+<meta name="description" content="Sélection de projets de maisons et d’intérieurs contemporains signés Homelith.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23030304'/%3E%3Ctext x='16' y='22' font-family='Arial,sans-serif' font-size='18' font-weight='700' fill='%23fff' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="assets/css/styles.css?v=1d74d351" as="style">
+<link rel="stylesheet" href="assets/css/styles.css?v=1d74d351">
+</head>
+<body data-page="projects">
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html">HOMELITH</a>
+    <nav class="nav">
+      <a href="index.html">ACCUEIL</a>
+      <a href="about.html">À PROPOS</a>
+      <a href="services.html">SERVICES</a>
+      <a href="projects.html">PROJETS</a>
+      <a href="contact.html">CONTACT</a>
+    </nav>
+    <a class="header-cta" href="contact.html">PARLER DE VOTRE PROJET</a>
+    <button class="burger" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">ACCUEIL</a>
+    <a href="about.html">À PROPOS</a>
+    <a href="services.html">SERVICES</a>
+    <a href="projects.html">PROJETS</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="contact.html" style="color:#18339C;font-weight:600">PARLER DE VOTRE PROJET</a>
+  </div>
+</header>
+<main>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:20px;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:12px;max-width:min(520px,100%)">
+<div style="font-weight:600;font-size:clamp(17px,1.7vw,22px);letter-spacing:.01em">PROJETS</div>
+<div onclick="toggleFilter(event)" style="font-size:12px;cursor:pointer;position:relative">Maisons <span style="font-size:11px">↓</span></div>
+</div>
+<div class="filter-menu" hidden>
+<div style="display:flex;justify-content:flex-end;max-width:min(520px,100%)">
+<div style="border:1px solid rgba(255,255,255,.22);margin-top:8px;font-size:11.5px">
+<div data-f="Maisons" onclick="pickFilter(this)" style="padding:9px 22px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.14)">Maisons</div>
+<div data-f="Intérieurs" onclick="pickFilter(this)" style="padding:9px 22px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.14)">Intérieurs</div>
+<div data-f="Tous" onclick="pickFilter(this)" style="padding:9px 22px;cursor:pointer">Tous</div>
+</div>
+</div>
+</div>
+
+<div style="margin-top:clamp(40px,5vw,74px)">
+
+<!-- ROW 1 — dominant LEFT (Ravencliff) -->
+<div class="pj-row" style="display:flex;align-items:flex-start">
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:43%">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[RAVENCLIFF HOUSE]</div>
+<div style="aspect-ratio:1.06;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-1.jpg" alt="white minimalist mediterranean villa with pool blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison individuelle</span></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Ravencliff Family</span></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2024</span></div>
+</div>
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:17%;margin-left:3%">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[SKARSVIK VILLA]</div>
+<div style="aspect-ratio:.74;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-2.jpg" alt="tall white mediterranean villa courtyard blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Villa côtière</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Client particulier</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2025</span></div>
+</div>
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:17%;margin-left:auto">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[OAKRIDGE HOUSE]</div>
+<div style="aspect-ratio:.84;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-3.jpg" alt="white cubic minimalist house blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison familiale</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Client particulier</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2023</span></div>
+</div>
+</div>
+
+<!-- ROW 2 — dominant RIGHT (Norden Park) -->
+<div class="pj-row" style="display:flex;align-items:flex-start;margin-top:clamp(74px,10vw,158px)">
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:17%">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[MARLOW ST. HOUSE]</div>
+<div style="aspect-ratio:.74;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-4.jpg" alt="white minimalist house geometric blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison urbaine</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Marlow Dev.</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2022</span></div>
+</div>
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:17%;margin-left:20%">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[SEAFRONT]</div>
+<div style="aspect-ratio:.8;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-5.jpg" alt="white minimalist wall geometric blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Villa en bord de mer</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Seafront Estates</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2024</span></div>
+</div>
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:43%;margin-left:auto">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[NORDEN PARK HOUSE]</div>
+<div style="aspect-ratio:1.5;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-6.jpg" alt="white minimalist villa mediterranean blue sky wide" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison &amp; design intérieur</span></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Norden Park Development</span></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2023</span></div>
+</div>
+</div>
+
+<!-- ROW 3 — dominant LEFT (Birchside) -->
+<div class="pj-row" style="display:flex;align-items:flex-start;margin-top:clamp(74px,10vw,158px)">
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:43%">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[BIRCHSIDE RESIDENCE]</div>
+<div style="aspect-ratio:1.16;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-7.jpg" alt="white minimalist mediterranean villa arch blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison &amp; design intérieur</span></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Birchside Family</span></div>
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2025</span></div>
+</div>
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:17%;margin-left:3%">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[ARLUND HILL HOUSE]</div>
+<div style="aspect-ratio:.8;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-8.jpg" alt="white minimalist house geometric blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison à flanc de colline</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Arlund Hill</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2024</span></div>
+</div>
+<div class="pj-cell" onclick="location.href='project.html'" style="cursor:pointer;width:17%;margin-left:auto">
+<div style="font-style:italic;font-weight:500;font-size:clamp(14px,1.4vw,19px);letter-spacing:.02em;color:#18339C;margin-bottom:clamp(12px,1.2vw,16px)">[LYNDEN HOUSE]</div>
+<div style="aspect-ratio:.74;position:relative;overflow:hidden"><img class="ph" src="assets/images/pj-9.jpg" alt="white minimalist mediterranean house blue sky" loading="lazy"></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px;margin-top:16px"><span style="color:#949494">TYPOLOGIE:</span><span>Maison &amp; intérieurs</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">CLIENT:</span><span>Lynden Family</span></div>
+<div style="display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.16);font-size:11px"><span style="color:#949494">LIVRAISON:</span><span>© 2025</span></div>
+</div>
+</div>
+
+</div>
+
+<div style="border-top:1px solid rgba(255,255,255,.16);margin-top:clamp(56px,7vw,108px);padding-top:clamp(20px,3vw,34px);margin-bottom:clamp(46px,6vw,98px);display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+<div style="flex:1 1 auto"></div>
+<div style="display:flex;gap:18px;font-size:12px">
+<div data-p="1" onclick="pickPage(this)" style="cursor:pointer;color:#FFFFFF">1</div>
+<div data-p="2" onclick="pickPage(this)" style="cursor:pointer;color:#18339C">2</div>
+<div data-p="3" onclick="pickPage(this)" style="cursor:pointer;color:#FFFFFF">3</div>
+<div data-p="4" onclick="pickPage(this)" style="cursor:pointer;color:#FFFFFF">4</div>
+<div style="color:#949494">…</div>
+<div data-p="21" onclick="pickPage(this)" style="cursor:pointer;color:#FFFFFF">21</div>
+</div>
+<div style="flex:1 1 auto;display:flex;justify-content:flex-end">
+<div onclick="pickPage(null,1)" style="display:inline-flex;cursor:pointer">
+<div style="border:1px solid rgba(255,255,255,.55);padding:12px 0;width:clamp(110px,10vw,130px);text-align:center;font-size:12px;font-weight:500">Suivant</div>
+<div style="border:1px solid rgba(255,255,255,.55);border-left:0;width:40px;display:flex;align-items:center;justify-content:center;font-size:12px">↗</div>
+</div>
+</div>
+</div>
+</main>
+<footer style="width:min(1200px,90vw);margin:clamp(50px,8vw,110px) auto 0;padding-bottom:clamp(20px,3vw,34px)">
+<div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(20px,3vw,30px) 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+<div onclick="location.href='index.html'" style="font-weight:600;font-size:15px;letter-spacing:.02em;cursor:pointer">HOMELITH</div>
+<nav style="display:flex;gap:clamp(16px,2.6vw,36px);font-size:11px;font-weight:500;letter-spacing:.1em;flex-wrap:wrap">
+<div onclick="location.href='index.html'" style="cursor:pointer">ACCUEIL</div>
+<div onclick="location.href='about.html'" style="cursor:pointer">À PROPOS</div>
+<div onclick="location.href='services.html'" style="cursor:pointer">SERVICES</div>
+<div onclick="location.href='projects.html'" style="cursor:pointer">PROJETS</div>
+<div onclick="location.href='contact.html'" style="cursor:pointer">CONTACT</div>
+</nav>
+<div onclick="location.href='contact.html'" style="font-size:11px;font-weight:600;letter-spacing:.1em;color:#18339C;cursor:pointer">PARLER DE VOTRE PROJET</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding:clamp(26px,4vw,48px) 0 clamp(30px,4vw,54px);font-size:clamp(16px,2vw,26px);line-height:1.35;letter-spacing:-.01em;max-width:760px"><span style="font-weight:600">Parlons de votre projet</span> <span style="color:#949494">et des premières étapes</span> <span style="font-weight:600">pour le concrétiser.</span></div>
+<div style="display:flex;gap:clamp(20px,4vw,60px);flex-wrap:wrap;padding-bottom:clamp(26px,4vw,44px)">
+<div style="flex:1 1 200px;min-width:170px">
+<div style="font-size:10.5px;color:#949494;margin-bottom:10px">Adresse</div>
+<div style="font-size:11.5px;line-height:1.5">24 rue du Bac<br>75007 Paris, France</div>
+</div>
+<div style="flex:1 1 200px;min-width:170px">
+<div style="font-size:10.5px;color:#949494;margin-bottom:10px">E-mail</div>
+<div style="font-size:11.5px;line-height:1.5">cont@homelith.design</div>
+</div>
+<div style="flex:1 1 200px;min-width:170px">
+<div style="font-size:10.5px;color:#949494;margin-bottom:10px">Téléphone</div>
+<div style="font-size:11.5px;line-height:1.5">06 12 34 56 78</div>
+</div>
+</div>
+<div style="border-top:1px solid rgba(255,255,255,.16);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:10px;color:#949494">
+<div>©2026 homelith. Tous droits réservés</div>
+<div style="display:flex;gap:clamp(14px,2vw,26px)">
+<div>Politique de confidentialité</div>
+<div>Politique de cookies</div>
+<div>Mentions légales</div>
+</div>
+</div>
+</footer>
+<script src="assets/js/main.js?v=1d74d351" defer></script>
+</body>
+</html>
